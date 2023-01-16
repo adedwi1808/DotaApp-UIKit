@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		0192694B2975945A00690FDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0192694A2975945A00690FDE /* AppDelegate.swift */; };
 		0192694D2975945A00690FDE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0192694C2975945A00690FDE /* SceneDelegate.swift */; };
-		0192694F2975945A00690FDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0192694E2975945A00690FDE /* ViewController.swift */; };
-		019269522975945A00690FDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019269502975945A00690FDE /* Main.storyboard */; };
 		019269542975945C00690FDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 019269532975945C00690FDE /* Assets.xcassets */; };
 		019269572975945C00690FDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 019269552975945C00690FDE /* LaunchScreen.storyboard */; };
+		01926962297594A400690FDE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01926961297594A400690FDE /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		019269472975945A00690FDE /* DotaApp-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DotaApp-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0192694A2975945A00690FDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0192694C2975945A00690FDE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0192694E2975945A00690FDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		019269512975945A00690FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		019269532975945C00690FDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		019269562975945C00690FDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		019269582975945C00690FDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01926961297594A400690FDE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +54,38 @@
 		019269492975945A00690FDE /* DotaApp-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				0192694A2975945A00690FDE /* AppDelegate.swift */,
-				0192694C2975945A00690FDE /* SceneDelegate.swift */,
-				0192694E2975945A00690FDE /* ViewController.swift */,
-				019269502975945A00690FDE /* Main.storyboard */,
+				01926964297594C700690FDE /* InitializedApp */,
+				0192695E2975947B00690FDE /* Presentation */,
 				019269532975945C00690FDE /* Assets.xcassets */,
 				019269552975945C00690FDE /* LaunchScreen.storyboard */,
 				019269582975945C00690FDE /* Info.plist */,
 			);
 			path = "DotaApp-UIKit";
+			sourceTree = "<group>";
+		};
+		0192695E2975947B00690FDE /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				019269602975948900690FDE /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		019269602975948900690FDE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				01926961297594A400690FDE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		01926964297594C700690FDE /* InitializedApp */ = {
+			isa = PBXGroup;
+			children = (
+				0192694A2975945A00690FDE /* AppDelegate.swift */,
+				0192694C2975945A00690FDE /* SceneDelegate.swift */,
+			);
+			path = InitializedApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +148,6 @@
 			files = (
 				019269572975945C00690FDE /* LaunchScreen.storyboard in Resources */,
 				019269542975945C00690FDE /* Assets.xcassets in Resources */,
-				019269522975945A00690FDE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +158,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0192694F2975945A00690FDE /* ViewController.swift in Sources */,
 				0192694B2975945A00690FDE /* AppDelegate.swift in Sources */,
 				0192694D2975945A00690FDE /* SceneDelegate.swift in Sources */,
+				01926962297594A400690FDE /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		019269502975945A00690FDE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				019269512975945A00690FDE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		019269552975945C00690FDE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +228,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,7 +304,7 @@
 				INFOPLIST_FILE = "DotaApp-UIKit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +332,7 @@
 				INFOPLIST_FILE = "DotaApp-UIKit/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
